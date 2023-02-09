@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>good</title>
+    <style>
+        body{
+            background-image: linear-gradient(skyblue,black);
+        }
+        #main {
+            font-size: 50px;
+            color: darkred;
+            text-shadow: 2px 3px yellow;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="main">Digikull</div>
+
+
+    <script>
+
+var g = setInterval(test,1000)
+var a =0
+        function test() {
+            a = a + 40;
+            if (a == 400) {
+                clearInterval(g)
+            } else {
+
+                var target = document.getElementById("main")
+                target.style.fontSize = a + "px";
+
+            }
+        }
+
+
+
+    </script>
+</body>
+
+</html>
